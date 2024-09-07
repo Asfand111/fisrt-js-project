@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learb Quran Academy</title>
+    <style>
+        *{
+            font-weight: bold;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container1 {
+            border-radius: 20px;
+            border: 2px solid black;
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: column;
+            align-items: center;
+
+            background-color: black;
+        }
+
+        .nav ul {
+            cursor: pointer;
+            text-align: center;
+            list-style: none;
+            display: flex;
+            /* margin: 15px; */
+        }
+        .nav ul li{
+
+            padding-top: 15px;
+        }
+        .nav li a {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 25px;
+            list-style: none;
+            text-decoration: none;
+            color: chartreuse;
+        }
+        .nav img {
+            height: 50px;
+        }
+        .container{
+            height: 100vh;
+            position: relative;
+            width: 100%;
+            /* background-color: #ccc; */
+            /* display: flex; */
+        } 
+        .form{
+            /* border: 2px solid black; */
+            height: 70%;
+            display: block;
+            margin: auto;
+            width: 60%;
+            font-size: 30px;
+            /* height: ; */
+            /* display: flex; */
+            text-align: center;
+            padding-top: 100px;
+        }
+        .form input{
+            background-color: transparent;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            /* justify-content: center;
+            align-items: center; */
+             border-radius: 10px;
+        }
+        .btn{
+            height: 30px;
+            width: 100px;
+            font-size: 15px;
+            background-color: rgb(5, 255, 26);
+            border :2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            /* width: 10%; */
+            margin-left: 70px;
+            color: rgb(255, 255, 255);
+            /* height: 5%; */
+        }
+        .btn a{
+            color: aliceblue;
+        }
+        .btn:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        .btn a:hover{
+            color: beige;
+        }
+       
+
+        /* .veido::before{
+            content: "";
+            position: absolute;
+            right: 0;
+            /* background:; */
+            /* bottom: 0;
+            z-index: -1;
+            opacity: 0.89;
+        } */ 
+        /* @media(min-aspect-ratio: 16\9){
+            .container video{
+                width: 100%;
+                height: auto;
+            }
+        } */
+        .vedio{
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+
+        <div class="nav">
+            <ul>
+                    <div class="logo">
+                        <a href="home.html"><img src="asfand.jpg" alt=""></a>
+                    </div>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/index.html">Sign up</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="container">
+        <video class="vedio" loop autoplay muted>
+            <source src="asfand.mp4" type="video/mp4">
+            This video does not support your browser
+        </video>
+        <form class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"> <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            
+            <label for="email">Adress:</label>
+            <input type="email" id="adress" name="adress" placeholder="Enter your adress"><br><br>
+            
+            <!-- <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="message"></textarea><br><br>
+             -->
+            <button class="btn"><a href="home.html">Submit</a></button>
+        </form>
+      
+</div>
+      
+</body>
+<script src="app.js"></script>
+</body>
+</html>
